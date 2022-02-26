@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const UserModel = require("./models/Users");
+
 
 require('dotenv').config();
 
@@ -18,12 +20,14 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
-const exercisesRouter = require('./routes/exercises');
-const usersRouter = require('./routes/users');
+app.post("/createUser", async (req, res) => {
+  const user = req.body;
+  const newUser = new UserModel(user);
+  await newUser.save();
 
-app.use('/exercises', exercisesRouter);
-app.use('/users', usersRouter);
+  res.json(user);
+});
 
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+app.listen(3001, () => {
+  console.log("SERVER RUNS PERFECTLY!");
 });
