@@ -120,7 +120,11 @@ class Signin extends Component {
                             <!-- an error submitting the form--> */}
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error signing up!</div></div>
                             {/* <!-- Submit Button--> */}
-                            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Sign Up</button></div>
+                            <div class="text-center">
+                                <a href="cities">
+                                    <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Sign Up</button>
+                                </a>
+                            </div>
                         </form>
                     </div>
                 </section>
