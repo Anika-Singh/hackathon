@@ -4,7 +4,8 @@ import Review from './Review';
 
 const SocialCard = ({ userData }) => {
     return (
-        <div className="card">
+        <div className="card" style={{
+            backgroundColor: 'white'}}>
             <div className="card__title">{userData.project_name}</div>
             <div className="card__body">
                 {/* <Location location={userData.location}/> */}

@@ -1,14 +1,40 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import SocialCard from "./SocialCard";
+import {
+  withScriptjs,
+  GoogleMap,
+  useLoadScript,
+  Marker,
+  InfoWindow
+} from "@react-google-maps/api";
+import { useEffect } from "react";
+import crimeData from "./crime.json";
 
-
-// import * as data from './data.json';
+const libraries = ["places"];
+const mapContainerStyle = {
+  height: "60vh",
+  width: "90vw",
+};
+// const options = {
+//   styles: mapStyles,
+//   disableDefaultUI: true,
+//   zoomControl: true,
+// };
+const center = {
+  lat: 30.267153,
+  lng: -97.743057,
+};
 
 function App() {
   const [allUsers, setAllUsers] = useState([]);
   const [users, setUsers] = useState([]);
   // console.log(data)
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: 'AIzaSyDhUYaWoaNK19-_R1pO2mOVM5sWXWmLnsM',
+    libraries,
+  });
+  
 
   useEffect(() => {
     (async () => {
@@ -32,11 +58,43 @@ function App() {
     setUsers(filteredUsers);
   }
 
+  if (loadError) return "Error";
+  if (!isLoaded) return "Loading...";
+  console.log(crimeData)
+
   return (
-    <div className="App">
-      <h1>Available Housing Complexes</h1>
+    <div className="App" style={{
+      backgroundColor: '#7db9b3'}}>
+      <h1 align="center">Available Housing Complexes</h1>
+
+      <GoogleMap id="map"
+        mapContainerStyle={mapContainerStyle}
+        zoom={11}
+        center={center}>
+            {crimeData.map(crime => (
+              <Marker
+                key={crime.incident_report_number}
+                position={{
+                  lat: parseFloat(crime.latitude),
+                  lng: parseFloat(crime.longitude)
+                }}
+              />
+            ))}
+            {users.map(users => (
+              <Marker
+                key={users.project_id}
+                icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
+                position={{
+                  lat: parseFloat(users.latitude),
+                  lng: parseFloat(users.longitude)
+                }}
+              />
+            ))}
+    
+        </GoogleMap>
+      <br></br>
       <input className="search-box" onInput={filterCards} placeholder="Search..."/>
-      <div className="cards-container">
+      <div className="cards-container" align="center">
 
       {users.map((user, index) => (
         <SocialCard key={index} userData={user} />
