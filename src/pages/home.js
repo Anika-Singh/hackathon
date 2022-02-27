@@ -14,13 +14,13 @@ class Home extends Component {
                     <div class="container">
                         <div class="masthead-subheading">Welcome To Haven!</div>
                         <div class="masthead-heading text-uppercase">Your safehouse away from home.</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#values">Tell Me More</a>
+                        <a class="btn btn-primary btn-xl text-uppercase" href="#purpose">Tell Me More</a>
                     </div>
 
-                    <section class="page-section" id="values">
+                    <section class="page-section" id="purpose">
                         <div class="container">
                             <div class="text-center">
-                                <h2 class="section-heading text-uppercase">Values</h2>
+                                <h2 class="section-heading text-uppercase">Purpose</h2>
                                 {/* <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> */}
                             </div>
                             <div class="row text-center">
@@ -131,7 +131,7 @@ class Home extends Component {
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">New York</div>
-                                        <div class="portfolio-caption-subheading text-muted">Concret jungle where dreams are made of!</div>
+                                        <div class="portfolio-caption-subheading text-muted">Concrete jungle where dreams are made of!</div>
                                     </div>
                                 </div>
                             </div>
@@ -152,15 +152,13 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- About--> */}
-                
+                </section>                
                 {/* <!-- Team--> */}
                 <section class="page-section bg-light" id="team">
                     <div class="container">
                         <div class="text-center">
-                            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <h2 class="section-heading text-uppercase">Meet Our Amazing Team</h2>
+                            <h3 class="section-subheading text-muted"></h3>
                         </div>
                         <div class="row">
                             <div class="col-lg-4">
@@ -194,30 +192,8 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                        </div>
                     </div>
                 </section>
-                {/* <!-- Clients-->
-                <div class="py-5">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-3 col-sm-6 my-3">
-                                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/assets/assets/img/logos/microsoft.svg" alt="..." /></a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 my-3">
-                                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/assets/assets/img/logos/google.svg" alt="..." /></a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 my-3">
-                                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/assets/assets/img/logos/facebook.svg" alt="..." /></a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 my-3">
-                                <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="/assets/assets/img/logos/ibm.svg" alt="..." /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
                 {/* <Signin /> */}
                
                {/* <!-- sign in--> */}
@@ -359,23 +335,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">Austin</h2>
+                                            <p class="item-intro text-muted">Keep Austin weird.</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/1.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Threads
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Illustration
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
@@ -394,23 +360,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">Houston</h2>
+                                            <p class="item-intro text-muted">Home of Hospitals</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/2.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Explore
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Graphic Design
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
@@ -429,23 +385,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">Los Angeles</h2>
+                                            <p class="item-intro text-muted">LA LA LA</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/3.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Finish
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Identity
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
@@ -464,23 +410,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">Seattle</h2>
+                                            <p class="item-intro text-muted">Hello Seattle, I am a mantaray.</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/4.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Lines
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Branding
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
@@ -499,23 +435,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">New York City</h2>
+                                            <p class="item-intro text-muted">The Greatest City in the World.</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/5.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Southwest
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Website Design
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
@@ -534,23 +460,13 @@ class Home extends Component {
                                     <div class="col-lg-8">
                                         <div class="modal-body">
                                             {/* <!-- Project details--> */}
-                                            <h2 class="text-uppercase">Project Name</h2>
-                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <h2 class="text-uppercase">Chicago</h2>
+                                            <p class="item-intro text-muted">The Bean.</p>
                                             <img class="img-fluid d-block mx-auto" src="/assets/assets/img/portfolio/6.jpg" alt="..." />
                                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                            <ul class="list-inline">
-                                                <li>
-                                                    <strong>Client:</strong>
-                                                    Window
-                                                </li>
-                                                <li>
-                                                    <strong>Category:</strong>
-                                                    Photography
-                                                </li>
-                                            </ul>
                                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                                 <i class="fas fa-times me-1"></i>
-                                                Close Project
+                                                Close 
                                             </button>
                                         </div>
                                     </div>
