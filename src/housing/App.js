@@ -31,7 +31,7 @@ function App() {
   const [users, setUsers] = useState([]);
   // console.log(data)
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyDhUYaWoaNK19-_R1pO2mOVM5sWXWmLnsM',
+    googleMapsApiKey: '-',
     libraries,
   });
   
